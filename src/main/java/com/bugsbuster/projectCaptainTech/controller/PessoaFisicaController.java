@@ -30,6 +30,7 @@ public class PessoaFisicaController {
 		return this.pessoaFisicaService.obterTodos();
 	}
 	
+	
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<PessoaFisica> obterPorId(@PathVariable int id){
 		PessoaFisica obj = this.pessoaFisicaService.obterPorId(id);
